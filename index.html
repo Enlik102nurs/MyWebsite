@@ -1,44 +1,97 @@
  <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <title>Обо мне</title>
+  <meta charset="UTF-8">
+  <title>Еңлік — Обо мне</title>
 </head>
 <body>
-    <!-- Заголовок с твоим именем -->
-    <h1>Еңлік</h1>
 
-    <!-- Абзацы о себе -->
-    <p>Я учусь в 10 классе и люблю танцы.</p>
-    <p>В свободное время читаю книги и смотрю интересные фильмы.</p>
-    <p>Мне интересно изучать <strong>философию</strong>.</p>
+<header>
+  <h1>Еңлік</h1>
+  <nav>
+    <ul>
+      <li><a href="#about">Обо мне</a></li>
+      <li><a href="#interests">Интересы</a></li>
+      <li><a href="#goals">Цели</a></li>
+      <li><a href="projects.html">Проекты</a></li>
+      <li><a href="#contact">Контакты</a></li>
+    </ul>
+  </nav>
+</header>
 
-    <!-- Список интересов -->
+<main>
+  <section id="about">
+    <article>
+      <p>Я учусь в 10 классе. В свободное время читаю книги и смотрю интересные фильмы. Мне интересно изучать <strong>философию</strong>.</p>
+      <img src="avatar.jpg" alt="Фото Еңлік">
+    </article>
+    <hr>
+  </section>
+
+  <section id="interests">
     <h2>Мои интересы</h2>
     <ul>
-        <li>Танцы</li>
-        <li>Написание стихов</li>
-        <li>Изготовление украшений</li>
+      <li>Танцы</li>
+      <li>Написание стихов</li>
+      <li>Изготовление украшений</li>
     </ul>
+    <hr>
+  </section>
 
-    <!-- Список целей -->
+  <section id="goals">
     <h2>Мои цели</h2>
     <ol>
-        <li>Запустить свой стартап</li>
-        <li>Выучить английский</li>
-        <li>Станцевать хореографию на профессиональной съёмке</li>
+      <li>Запустить свой стартап</li>
+      <li>Выучить английский</li>
+      <li>Станцевать хореографию на профессиональной съёмке</li>
     </ol>
-
     <hr>
+  </section>
 
-    <!-- Фото -->
-    <img src="avatar.jpg" alt="Моя фотография" width="200">
+  <section id="skills">
+    <h2>Мои навыки</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Навык</th>
+          <th>Уровень</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Танцы</td>
+          <td>Продвинутый</td>
+        </tr>
+        <tr>
+          <td>Английский</td>
+          <td>Средний</td>
+        </tr>
+        <tr>
+          <td>Программирование</td>
+          <td>Начальный</td>
+        </tr>
+      </tbody>
+    </table>
+    <hr>
+  </section>
 
-    <!-- Ссылка на соцсеть -->
-    <p><a href="https://www.instagram.com/enlixss">Мой Instagram</a></p>
+  <section id="contact">
+    <h2>Связаться со мной</h2>
+    <form>
+      <label>Имя: <input type="text" name="name" required></label><br>
+      <label>Email: <input type="email" name="email" required></label><br>
+      <label>Сообщение: <textarea name="message" required></textarea></label><br>
+      <label><input type="checkbox" required> Согласие на обработку данных</label><br>
+      <button type="submit">Отправить</button>
+      <button type="reset">Очистить</button>
+    </form>
+  </section>
+</main>
 
-    <!-- Ссылка на вторую страницу -->
-    <p><a href="projects.html">Мои проекты / достижения</a></p>
+<footer>
+  <p>Мой Instagram: <a href="https://instagram.com/enlixss">enlixss</a></p>
+  <p><a href="#about">Наверх</a> | <a href="projects.html">К проектам</a></p>
+</footer>
+
 </body>
-
 </html>
